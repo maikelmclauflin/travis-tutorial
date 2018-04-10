@@ -1,0 +1,23 @@
+{
+  "name": "travis_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "",
+  "license": "ISC",
+  "engine": {
+    "node": "9.10.1",
+    "npm": "5.8.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-cli": "^6.26.0"
+  }
+}
