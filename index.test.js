@@ -3,7 +3,8 @@ import identifier from './'
 import {
   isFunction,
   isObject,
-  isString
+  isString,
+  isNumber
 } from 'lodash'
 
 test('its a function', t => {
@@ -17,4 +18,9 @@ test('returns a promise', async t => {
   t.true(isObject(hash))
   const { secret } = hash
   t.true(isString(secret))
+})
+const { env } = process
+const { SECRET } = env
+test('loads ignored env', t => {
+  t.true(isNumber(+SECRET))
 })
